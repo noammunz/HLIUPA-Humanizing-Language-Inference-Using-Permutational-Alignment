@@ -29,7 +29,7 @@ class Preprocessor:
         batch_size (int): The batch size for the dataloaders.
         seed (int): The random seed to use.
     """
-    def __init__(self, train_path, dev_matched_path, dev_mismatched_path, model_name,
+    def __init__(self, train_path, dev_matched_path, dev_mismatched_path, model_name='FacebookAI/roberta-large',
                     num_permutations=5, dev_permutations=5, config='both', max_length=256, batch_size=16, seed=42):
         self.train_path = train_path
         self.dev_matched_path = dev_matched_path
@@ -139,6 +139,7 @@ class Preprocessor:
                 new_row['perm_id'] = i + 1
                 new_row['sentence1'] = perm1
                 new_row['sentence2'] = perm2
+                new_row['label'] = 0
                 jumbled_data.append(new_row) 
             
         return pd.DataFrame(jumbled_data)
