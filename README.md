@@ -3,17 +3,21 @@
 # Adversarial Training for NLI Models
 
 ## Project Overview
-Natural Language Inference (NLI) models, particularly those based on Transformer architectures, have achieved remarkable performance on various benchmarks. However, recent studies have shown a significant flaw: these models often fail to recognize the importance of word order, classifying permuted sentences similarly to their original forms. This insensitivity starkly contrasts with human language processing, where syntax is crucial.
+Natural Language Inference (NLI) models, especially Transformer-based architectures, have demonstrated excellent capabilities across various benchmarks. Nonetheless, recent studies have highlighted a critical flaw: these models often do not account for word order, misclassifying permuted sentences similarly to their originals. This oversight is a stark departure from human linguistic processing, where syntactic structures are essential.
+
+## Reference Work
+This project builds upon the work available at [facebookresearch/UNLU](https://github.com/facebookresearch/UNLU/tree/main), which has pioneered investigations into the impact of word order on NLI model performance.
 
 ## Objective
-This project aims to address the insensitivity of NLI models to word order permutations. By implementing an adversarial training approach, we seek to enhance the syntactic sensitivity of these models, making them more robust and aligned with human linguistic capabilities.
+Our project seeks to enhance the syntactic sensitivity of NLI models to word permutations through adversarial training, aiming to align their performance closer to human language understanding.
 
 ## Approach
-- **Adversarial Training:** We will train NLI models on both original and syntactically permuted examples to encourage sensitivity to word order.
-- **Evaluation:** The effectiveness of this approach will be measured by comparing the performance on standard NLI benchmarks before and after adversarial training.
+- **Adversarial Training:** We train models using both original and permuted sentence examples to foster resilience to syntactic perturbations.
+- **Benchmark Evaluation:** We assess the models' robustness using the benchmarks established in the [UNLU repository](https://github.com/facebookresearch/UNLU/tree/main), focusing on their response to word-order changes.
 
 ## Contributing
-We welcome contributions to this project. Please feel free to fork the repository, make your changes, and submit a pull request.
+Contributions to this project are welcome. Interested parties can fork the repository, commit modifications, and submit a pull request for review.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is available under the MIT License. For more details, see the [LICENSE.md](LICENSE.md) file in the repository.
+
