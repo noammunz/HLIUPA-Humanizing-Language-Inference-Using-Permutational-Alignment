@@ -6,7 +6,7 @@
 Natural Language Inference (NLI) models, especially Transformer-based architectures, have demonstrated excellent capabilities across various benchmarks. Nonetheless, recent studies have highlighted a critical flaw: these models often do not account for word order, misclassifying permuted sentences similarly to their originals. This oversight is a stark departure from human linguistic processing, where syntactic structures are essential.
 
 ## Reference Work
-This project builds upon the work available at [facebookresearch/UNLU](https://github.com/facebookresearch/UNLU/tree/main), which has pioneered investigations into the impact of word order on NLI model performance.
+This project builds upon the work available at [facebookresearch/UNLU](https://github.com/facebookresearch/UNLU/tree/main), and [paper](https://arxiv.org/abs/2101.00010).
 
 ## Objective
 Our project seeks to enhance the syntactic sensitivity of NLI models to word permutations through adversarial training, aiming to align their performance closer to human language understanding.
